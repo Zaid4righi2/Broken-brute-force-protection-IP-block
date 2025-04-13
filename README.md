@@ -1,18 +1,26 @@
-# Broken IP-Based Brute Force Protection
+# 🔐 Broken IP-Based Brute Force Protection (Node.js)
 
-This is a Node.js app that simulates a broken IP-based brute force protection.  
-The app allows login attempts and blocks IP after 3 failed tries — but can be bypassed using X-Forwarded-For.
+This is a demo application simulating a flawed brute-force protection mechanism based on IP address.  
+The server blocks IPs after 3 failed login attempts — but it can be bypassed using the `X-Forwarded-For` header.
 
-## How to Run
+## 📂 Project Structure
 
-1. Clone this repo
-2. Run `npm install`
-3. Create a `.env` file with:
-   PORT=3000
-4. Run the app:
-   node app.js
-5. Visit `http://localhost:3000/login`
+- `app.js` – Main app file  
+- `routes/auth.js` – Authentication logic  
+- `views/login.ejs` – Login page  
+- `.env` – Configuration file (port, etc.)
 
+---
+
+## 🚀 Getting Started
+
+Follow these steps to run the app locally:
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/your-username/broken-ip-protection.git
+cd broken-ip-protection
 ## Default Credentials
-Username: admin  
-Password: admin123
+Username: zaid  
+Password: aymen123   
